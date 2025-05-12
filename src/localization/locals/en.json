@@ -1,0 +1,16 @@
+{
+  "dashboard": "Dashboard",
+  "users": "Users",
+  "products": "Products",
+  "adminPanel": "Admin Panel",
+  "addProduct": "Add Product",
+  "name": "Name",
+  "price": "Price",
+  "save": "Save",
+  "delete": "Delete",
+  "actions": "Actions",
+  "id": "ID",
+  "language": "Language",
+  "english": "English",
+  "arabic": "Arabic"
+}
