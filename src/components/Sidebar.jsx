@@ -30,7 +30,7 @@ export default function Sidebar() {
 
   return (
     <div
-      className={`bg-primary dark:bg-primary-dark text-white h-full transition-all duration-300 ease-in-out   border border-gray-500  border-opacity-30
+      className={`bg-primary-light dark:bg-primary-dark text-white h-full transition-all duration-300 ease-in-out   border border-gray-500  border-opacity-30
         ${collapsed ? "w-20" : "w-64"} 
         ${direction === "rtl" ? "text-right" : "text-left"}`}
     >

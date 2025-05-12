@@ -15,7 +15,7 @@ export default function App() {
   return (
     <div dir={direction} className="flex h-screen">
       <Sidebar />
-      <div className="bg-white dark:bg-primary-dark dark:text-white flex-1 flex flex-col">
+      <div className="bg-white dark:bg-primary-body dark:text-white flex-1 flex flex-col">
         <Topbar />
         <main className=" p-4 overflow-auto">
           <Routes>
