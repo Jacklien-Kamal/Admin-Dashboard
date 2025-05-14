@@ -7,16 +7,17 @@ import CreateProduct from './pages/Products/CreateProduct';
 import { useLocalization } from './localization/LocalizationContext';
 import UserList from './pages/users/users';
 import React from 'react';
-import Sidebar from './components/sidebar';
-import Topbar from './components/topBar';
+
 import Dashboard from './pages/dashboard';
+import Sidebar from './components/SideBar/Sidebar';
+import TopBar from './components/TopBar/TopBar';
 export default function App() {
   const { direction } = useLocalization();
   return (
     <div dir={direction} className="flex h-screen">
       <Sidebar />
-      <div className="bg-white dark:bg-primary-body dark:text-white flex-1 flex flex-col">
-        <Topbar />
+      <div className="bg-secondary-body dark:bg-primary-body dark:text-white flex-1 flex flex-col">
+        <TopBar />
         <main className=" p-4 overflow-auto">
           <Routes>
             <Route path="/" element={<Dashboard />} />

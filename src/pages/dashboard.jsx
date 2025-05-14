@@ -1,10 +1,11 @@
 // pages/Dashboard.jsx
 import React from 'react';
 import { BarChart } from '@mui/x-charts/BarChart';
+import Charts from '../components/charts/Charts';
 
 const Dashboard = () => {
   return (
-    <div>
+    <div className='px-4'>
       <h1 className="text-2xl font-bold mb-4">Dashboard</h1>
       {/* <BarChart
         xAxis={[{ scaleType: 'band', data: ['Jan', 'Feb', 'Mar'] }]}
@@ -12,6 +13,7 @@ const Dashboard = () => {
         width={500}
         height={300}
       /> */}
+      <Charts/>
     </div>
   );
 };
