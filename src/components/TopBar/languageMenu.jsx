@@ -28,7 +28,7 @@ export default function LanguageSelector() {
             }}
           >
             <img
-              src={language === "ar" ? "./public/egFlag.png" : "./public/enFlag.svg"}
+              src={language === "ar" ? "/egFlag.png" : "/enFlag.svg"}
               alt={language}
               width='30%'
               height={30}
@@ -43,7 +43,7 @@ export default function LanguageSelector() {
               }}
             >
               <img
-                src="./public/enFlag.svg"
+                src="/enFlag.svg"
                 width={20}
               />{" "}
               English
@@ -55,7 +55,7 @@ export default function LanguageSelector() {
                 popupState.close();
               }}
             >
-              <img src="./public/egFlag.png" width={20} /> Arabic{" "}
+              <img src="/egFlag.png" width={20} /> Arabic{" "}
             </MenuItem>
           </Menu>
         </React.Fragment>

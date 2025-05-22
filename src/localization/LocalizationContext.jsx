@@ -4,7 +4,7 @@ import i18n from './i18n';
 const LocalizationContext = createContext();
 
 export const LocalizationProvider = ({ children }) => {
-  const [language, setLanguage] = useState(i18n.language || 'en');
+  const [language, setLanguage] = useState(i18n.language || 'ar');
 
   const direction = language === 'ar' ? 'rtl' : 'ltr';
 

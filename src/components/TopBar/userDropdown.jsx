@@ -8,7 +8,7 @@ export default function UserDropdown() {
     <div>
 
    <button onClick={() => setMenuOpen(!menuOpen)} onBlur={()=>{setMenuOpen(!menuOpen)}}>
-            <FaUserCircle className='text-primary-light' />
+            <FaUserCircle className='' />
           </button>  
           
           {/* User Menu */}

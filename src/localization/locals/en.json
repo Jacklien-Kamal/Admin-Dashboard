@@ -1,6 +1,8 @@
 {
   "dashboard": "Dashboard",
+  "meeting":"YOU ARE MINE ",
   "users": "Users",
+
   "products": "Products",
   "adminPanel": "Admin Panel",
   "addProduct": "Add Product",
@@ -12,5 +14,7 @@
   "id": "ID",
   "language": "Language",
   "english": "English",
-  "arabic": "Arabic"
+  "arabic": "Arabic",
+  "edit": "Edit",
+  "delete": "Delete"
 }

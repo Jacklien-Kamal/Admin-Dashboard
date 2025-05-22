@@ -11,6 +11,7 @@ import React from 'react';
 import Dashboard from './pages/dashboard';
 import Sidebar from './components/SideBar/Sidebar';
 import TopBar from './components/TopBar/TopBar';
+import UserDetails from './pages/users/userDetails';
 export default function App() {
   const { direction } = useLocalization();
   return (
@@ -22,8 +23,9 @@ export default function App() {
           <Routes>
             <Route path="/" element={<Dashboard />} />
             <Route path="/users" element={<UserList />} />
-            <Route path="/users/create" element={<CreateUser />} />
             <Route path="/products" element={<ProductList />} />
+            <Route path="/users/create" element={<CreateUser />} />
+            <Route path="/users/:id" element={<UserDetails />} />
             <Route path="/products/create" element={<CreateProduct />} />
           </Routes>
         </main>

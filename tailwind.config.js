@@ -10,12 +10,12 @@ module.exports = {
 
        colors: {
         primary: {
-          body: '#252729',     // Primary 500
-          light: '#111c43',       // Primary 400
-          dark: '#1a1c1e',        // Primary 600
+          body: '#2f434e',     // Primary 500
+          light: '#734025', // Primary 400
+          dark: '#1c2930',        // Primary 600
         },
         secondary:{
-          body:'#f0f1f7'
+          body:'#E8D3B9'
         }
       },
        container: {

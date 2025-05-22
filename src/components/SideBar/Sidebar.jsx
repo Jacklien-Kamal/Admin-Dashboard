@@ -14,8 +14,10 @@ import {
 import logo from "../../../public/logo.png";
 import ReportsMenuSection from "./Report";
 import { FaChartBar } from "react-icons/fa";
+import { useTheme } from "../../context/theme";
 
 export default function Sidebar() {
+  const { theme } = useTheme();
   const [collapsed, setCollapsed] = useState(false);
   const { t } = useTranslation();
   const { direction } = useLocalization();
@@ -32,39 +34,34 @@ export default function Sidebar() {
   ];
 
   return (
-    <div 
-      className={`bg-primary-light dark:bg-primary-dark text-white h-full transition-all duration-300 ease-in-out   border border-gray-500  border-opacity-30
-        ${collapsed ? "w-20" : "w-64"} 
-        ${direction === "rtl" ? "text-right" : "text-left"}`}
+    <div id="sidebar"
+      className={`text-primary-light dark:text-white h-full transition-all duration-300 ease-in-out px-5  border border-gray-500  border-opacity-100
+        ${collapsed ? "w-20 " : "w-70 pe-9"} 
+        ${direction === "rtl" ? "text-right" : "text-left"}     ${theme === "dark" ? "darkBg" : "lightBg"}
+
+        `}
+
     >
       {!collapsed && (
         <div className="flex items-center justify-center h-16 mt-6">
-          <img src={logo} alt="Company Logo" width={30} className="mr-2" />
-          <h1 className="text-xl font-bold"> Company Name </h1>
+          <h1 className="text-3xl font-bold"> ♰ {t("meeting")} ♰</h1>
         </div>
       )}
-      {collapsed && (
-        <img
-          src={logo}
-          alt="Company Logo"
-          width={30}
-          className="mx-auto py-4"
-        />
-      )}
-      <hr className="border border-gray-300 border-opacity-10 mx-auto w-56  "></hr>
+   
+      <hr className="border border-primary-light dark:border-gray-300 border-opacity-10 mx-auto w-56  "></hr>
 
       <div className="flex items-center justify-between px-4 py-4">
         {/*  */}
         {!collapsed && <h2 className="text-xl font-bold"></h2>}
         <button
           onClick={() => setCollapsed(!collapsed)}
-          className="text-white hover:text-gray-300 "
+          className="dark:text-white hover:text-gray-900 "
         >
           {collapsed ? <MdMenu size={24} /> : <MdClose size={24} />}
         </button>
       </div>
 
-      <ul className="space-y-2 mt-6 text-gray-400 text-lg" 
+      <ul className="space-y-2 mt-6 text-primary-light dark:text-white text-lg" 
     onMouseOver={() => setCollapsed(false)}
 
       >
@@ -72,7 +69,7 @@ export default function Sidebar() {
           <li key={item.path}>
             <Link
               to={item.path}
-              className={`flex items-center justify-start gap-3 px-4 py-3 rounded-lg hover:text-gray-100 hover:bg-white hover:bg-opacity-20 transition-all ${
+              className={`flex items-center justify-start gap-3 px-4 py-3 rounded-lg  hover:bg-primary-light hover:bg-opacity-20 transition-all ${
                 location.pathname === item.path
                   ? "bg-white bg-opacity-10  font-semibold"
                   : ""

@@ -13,7 +13,7 @@ const Dashboard = () => {
         width={500}
         height={300}
       /> */}
-      <Charts/>
+      {/* <Charts/> */}
     </div>
   );
 };

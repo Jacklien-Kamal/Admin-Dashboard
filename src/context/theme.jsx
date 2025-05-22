@@ -10,10 +10,13 @@ export const ThemeProvider = ({ children }) => {
 
   useEffect(() => {
     const root = window.document.documentElement;
+    const sidebar= document.getElementById('sidebar');
     if (theme === 'dark') {
       root.classList.add('dark');
+ 
     } else {
       root.classList.remove('dark');
+
     }
 
     localStorage.setItem('theme', theme);

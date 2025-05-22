@@ -26,11 +26,11 @@ export default function TopBar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <div className="bg-white dark:bg-primary-dark  dark:text-white px-4 shadow border border-gray-500  border-opacity-30 ">
+    <div className="bg-primary-light dark:bg-primary-dark text-white px-4 shadow border border-gray-500  border-opacity-30 ">
       <div className=" mx-auto px-4 py-3 flex justify-between items-center">
         {/* Logo */}
         <div className="flex items-center gap-2 text-xl font-bold">
-          <span>Company name</span>
+          <span>{t("meeting")}</span>
           {/* <FaChurch /> */}
         </div>
 
@@ -47,7 +47,7 @@ export default function TopBar() {
         </div>
 
         {/* Desktop Icons */}
-        <div className="hidden text-xl md:flex items-center gap-6 text-gray-700 dark:text-white">
+        <div className="hidden text-xl md:flex items-center gap-6 text-white">
           
           <ThemeToggler/>
 

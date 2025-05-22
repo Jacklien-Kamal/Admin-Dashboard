@@ -3,7 +3,7 @@ import { initReactI18next } from 'react-i18next';
 import LanguageDetector from 'i18next-browser-languagedetector';
 
 import en from './locals/en.json';
-import ar from './locals/er.json';
+import ar from './locals/ar.json';
 
 i18n
   .use(LanguageDetector)
