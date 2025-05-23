@@ -1,10 +1,10 @@
 {
   "dashboard": "لوحة التحكم",
   "meeting":" اجتماع انت لي",
-  "users": "المخدومبن",
-  "products": "المنتجات",
+  "users": "المخدومين",
+  "servants": "الخدام",
   "adminPanel": "لوحة المدير",
-  "addProduct": "إضافة منتج",
+  "addServant": "إضافةخادم",
   "name": "الاسم",
   "price": "السعر",
   "save": "حفظ",

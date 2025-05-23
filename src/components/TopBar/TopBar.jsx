@@ -17,6 +17,7 @@ import LanguageSelector from "./languageMenu";
 import UserDropdown from "./userDropdown";
 import ThemeToggler from "./themeToggler";
 import FullScreenBtn from "./FullScreenBtn";
+import { Link } from "react-router-dom";
 
 
 
@@ -52,7 +53,7 @@ export default function TopBar() {
           <ThemeToggler/>
 
           <button className="relative">
-            <LuMessageCircleMore />
+            <Link to={'./messages'}><LuMessageCircleMore /> </Link>
             <span className="absolute -top-2 -right-2 text-xs w-full  rounded-full bg-sky-400 ">
               4
             </span>
