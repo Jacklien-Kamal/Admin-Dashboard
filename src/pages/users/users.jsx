@@ -1,102 +1,39 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
+import Loader from "../../components/loader/loader";
+import { LuCircleX } from "react-icons/lu";
 
 const UserList = () => {
   const { t } = useTranslation();
   const [searchQuery, setSearchQuery] = useState("");
   const [sortKey, setSortKey] = useState("");
   const [sortOrder, setSortOrder] = useState("asc");
+  const [ loading , setLoading ] = useState(false);
 
-  const [users, setUsers] = useState([
-    {
-      id: "1",
-      name: "John Doe",
-      phoneNumber: "1234567890",
-      email: "john@example.com",
-      gender: "male",
-      address: "123 Main St",
-      profileImg:
-        "https://www.roumortodox.org/wp-content/uploads/2025/04/2504211.jpg",
-      password: "password123",
-      dateOfBirth: "1990-01-01",
-      role: "servant",
-      AttendencePoints: 0,
-      attPoints: 0,
-      totalPoints: 0,
-      status: "active",
-    },
-    {
-      id: "2",
-      name: "Jane Smith",
-      phoneNumber: "0987654321",
-      email: "jane@example.com",
-      gender: "female",
-      address: "456 Elm St",
-      profileImg:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSi7j_jdY9sY_IzhcPugwWjOtq7I2LHt-Jow&s",
-      password: "password123",
-      dateOfBirth: "1995-05-15",
-      role: "admin",
-      AttendencePoints: 0,
-      attPoints: 0,
-      totalPoints: 0,
-      status: "active",
-    },
-    {
-      id: "3",
-      name: "Alice Johnson",
-      phoneNumber: "5551234567",
-      email: "alice@example.com",
-      gender: "female",
-      address: "789 Oak St",
-      profileImg:
-        "https://i.pinimg.com/474x/51/36/9d/51369dee08c31a12920e3e7d26f03e29.jpg",
-      password: "password123",
-      dateOfBirth: "1992-03-30",
-      role: "user",
-      AttendencePoints: 0,
-      attPoints: 0,
-      totalPoints: 0,
-      status: "active",
-    },
-    {
-      id: "4",
-      name: "Bob Brown",
-      phoneNumber: "5559876543",
-      email: "bob@example.com",
-      gender: "male",
-      address: "101 Pine St",
-      profileImg:
-        "https://st2.depositphotos.com/2703645/7303/v/450/depositphotos_73039841-stock-illustration-male-avatar-icon.jpg",
-      password: "password123",
-      dateOfBirth: "1988-07-22",
-      role: "user",
-      AttendencePoints: 0,
-      attPoints: 0,
-      totalPoints: 0,
-      status: "active",
-    },
-    {
-      id: "5",
-      name: "Charlie Davis",
-      phoneNumber: "5556543210",
-      email: "charlie@example.com",
-      gender: "male",
-      address: "202 Maple St",
-      profileImg:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlOLBRK-3wEFFeCojWlHou4nooggl5iI2PJQ&s",
-      password: "password123",
-      dateOfBirth: "1990-12-12",
-      role: "user",
-      AttendencePoints: 0,
-      attPoints: 0,
-      totalPoints: 0,
-      status: "active",
-    },
+  const [users, setUsers] = useState([]);
 
-    // Add more users here...
-  ]);
+  useEffect(() => {
+    setLoading(true);
+    const fetchUsers = async () => {
+      await fetch("data/users.json")
+        .then(async (res) => {
+          const data = await res.json();
+          if (data) {
+            setLoading(false);
+
+            setUsers(data);
+            localStorage.setItem("users", JSON.stringify(data));
+          } else {
+            console.log("no response");
+          }
+        })
+        .catch((err) => {
+          console.log(err);
+        });
+    };
+    fetchUsers();
+  }, []);
 
   localStorage.setItem("users", JSON.stringify(users));
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -169,9 +106,9 @@ const UserList = () => {
           </Link>
         </div>
       </div>
-
-      <div className="hidden lg:block overflow-auto">
-        <table className="min-w-full bg-white dark:bg-gray-600 rounded shadow">
+{loading?<Loader/>:<>
+      <div className="hidden  border  rounded-xl shadow lg:block overflow-auto">
+        <table className="min-w-full bg-white dark:bg-gray-600    ">
           <thead className="bg-primary-light dark:bg-primary-dark text-white">
             <tr>
               <th
@@ -301,13 +238,22 @@ const UserList = () => {
             </button>
           </div>
         ))}
-      </div>
+      </div></>}
+
 
       {/* Modal */}
       {isModalOpen && selectedUser && (
-        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
-          <div className="bg-white p-6 rounded-lg w-[600px] max-h-[90vh] overflow-y-auto space-y-4 shadow-lg">
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50" >
+          <div className="bg-white p-6 rounded-lg w-[600px] max-h-[90vh] overflow-y-auto space-y-4 shadow-lg" >
+            <button
+              className="  text-primary-light hover:text-gray-700 text-3xl"
+              onClick={() => setIsModalOpen(false)}
+            >
+              <LuCircleX />
+
+            </button>
             <h2 className="text-xl font-bold text-center mb-4">Edit User</h2>
+            
             <img
               src={selectedUser.profileImg}
               alt="Profile"
@@ -321,8 +267,9 @@ const UserList = () => {
               { label: "Address", key: "address" },
               { label: "Date of Birth", key: "dateOfBirth", type: "date" },
               { label: "Gender", key: "gender" },
-              { label: "Role", key: "role" },
-              { label: "Status", key: "status" },
+              { label: "Attendance Points", key: "attPoints" },
+              { label: "Performance Points", key: "attendancePoints" },
+              { label: "Total Points", key: "totalPoints" },
             ].map(({ label, key, type = "text" }) => (
               <div key={key}>
                 <label className="block font-medium mb-1">{label}</label>
@@ -335,6 +282,27 @@ const UserList = () => {
                 />
               </div>
             ))}
+            <label className="block font-medium mb-1">Status</label>
+            <select
+              name="status"
+              value={selectedUser.status}
+              onChange={handleChange}
+              className="w-full border border-gray-300 p-2 rounded-md"
+            >
+              <option value="active">Active</option>
+              <option value="inactive">Inactive</option>
+            </select>
+            <label className="block font-medium mb-1">Role</label>
+            <select
+              name="role"
+              value={selectedUser.role}
+              onChange={handleChange}
+              className="w-full border border-gray-300 p-2 rounded-md"
+            >
+              <option value="user">User</option>
+              <option value="admin">Admin</option>
+              <option value="servant">Servant</option>
+            </select>
             <div className="flex justify-end gap-4 pt-4">
               <button
                 className="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600"
