@@ -2,17 +2,17 @@
 // App.jsx
 import { Routes, Route } from 'react-router-dom';
 import CreateUser from './pages/Users/CreateUser';
-import CreateProduct from './pages/Products/CreateProduct';
+import CreateProduct from './pages/Servants/CreateProduct';
 import { useLocalization } from './localization/LocalizationContext';
 import UserList from './pages/users/users';
 import React from 'react';
-
 import Dashboard from './pages/dashboard';
 import Sidebar from './components/SideBar/Sidebar';
 import TopBar from './components/TopBar/TopBar';
 import UserDetails from './pages/users/userDetails';
 import { LoaderWrapper } from './context/loader';
 import FixedBottomNavigation from './pages/messages/messages';
+import ServantsList from './pages/Servants/servsnts';
 export default function App() {
   const { direction } = useLocalization();
   return (
@@ -26,7 +26,7 @@ export default function App() {
           <Routes>
             <Route path="/" element={<Dashboard />} />
             <Route path="/users" element={<UserList />} />
-            {/* <Route path="/products" element={<ProductList />} /> */}
+            <Route path="/servants" element={<ServantsList />} />
             <Route path="/users/create" element={<CreateUser />} />
             <Route path="/users/:id" element={<UserDetails />} />
             <Route path="/products/create" element={<CreateProduct />} />

@@ -17,6 +17,7 @@
     "@mui/material": "^7.1.0",
     "@mui/styled-engine-sc": "^7.1.0",
     "@mui/x-charts": "^8.3.0",
+    "@mui/x-data-grid-pro": "^8.5.0",
     "i18next": "^25.1.2",
     "i18next-browser-languagedetector": "^8.1.0",
     "material-ui-popup-state": "^5.3.5",

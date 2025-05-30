@@ -27,7 +27,7 @@ export default function Sidebar() {
     { path: "/", label: t("dashboard"), icon: <MdDashboard size={20} /> },
     { path: "/users", label: t("users"), icon: <MdPeople size={20} /> },
     {
-      path: "/products",
+      path: "/servants",
       label: t("servants"),
       icon: <MdInventory2 size={20} />,
     },

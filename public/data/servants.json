@@ -1,0 +1,178 @@
+[
+  {
+    "id": "1",
+    "name": "John Doe",
+    "phoneNumber": "1234567890",
+    "email": "john@example.com",
+    "gender": "male",
+    "address": "123 Main St",
+    "profileImg": "https://www.roumortodox.org/wp-content/uploads/2025/04/2504211.jpg",
+    "dateOfBirth": "1990-01-01",
+    "role": "servant",
+    "status": "active",
+    "group": "Youth Service",
+    "serviceType": "Youth Meetings",
+    "lastServed": "2025-05-10",
+    "evaluationNotes": "Excellent engagement with youth group.",
+    "supervisor": "Fr. Michael",
+    "users": [
+      {
+        "id": "u1",
+        "name": "Mark Hanna",
+        "gender": "male",
+        "age": 17
+      },
+      {
+        "id": "u2",
+        "name": "Mary Gerges",
+        "gender": "female",
+        "age": 16
+      }
+    ],
+    "meetings": [
+      {
+        "id": "m1",
+        "title": "Youth Meeting - Discipleship",
+        "date": "2025-05-01",
+        "attended": true
+      },
+      {
+        "id": "m2",
+        "title": "Spiritual Retreat",
+        "date": "2025-04-15",
+        "attended": true
+      },
+      {
+        "id": "m3",
+        "title": "Spiritual Retreat",
+        "date": "2025-04-15",
+        "attended": false
+      },
+        {
+            "id": "m4",
+            "title": "Youth Meeting - Fellowship",
+            "date": "2025-05-05",
+            "attended": true
+        },
+        {
+            "id": "m5",
+            "title": "Youth Meeting - Outreach",
+            "date": "2025-05-08",
+            "attended": false
+        },
+        {
+            "id": "m6",
+            "title": "Youth Meeting - Prayer",
+            "date": "2025-05-12",
+            "attended": true
+        },
+        {
+            "id": "m7",
+            "title": "Youth Meeting - Bible Study",
+            "date": "2025-05-15",
+            "attended": true
+        },
+        {
+            "id": "m8",
+            "title": "Youth Meeting - Worship",
+            "date": "2025-05-18",
+            "attended": false
+        }
+
+    ]
+  },
+  {
+    "id": "2",
+    "name": "Jane Smith",
+    "phoneNumber": "0987654321",
+    "email": "jane@example.com",
+    "gender": "female",
+    "address": "456 Elm St",
+    "profileImg": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSi7j_jdY9sY_IzhcPugwWjOtq7I2LHt-Jow&s",
+    "dateOfBirth": "1995-05-15",
+    "role": "servant",
+    "status": "active",
+    "group": "Children's Ministry",
+    "serviceType": "Sunday School",
+    "lastServed": "2025-05-19",
+    "evaluationNotes": "Reliable and proactive.",
+    "supervisor": "Sr. Maria",
+    "users": [
+      {
+        "id": "u3",
+        "name": "Peter Adel",
+        "gender": "male",
+        "age": 10
+      },
+      {
+        "id": "u3",
+        "name": "Mina Adel",
+        "gender": "male",
+        "age": 10
+      },
+      {
+        "id": "u3",
+        "name": "Moheb Adel",
+        "gender": "male",
+        "age": 10
+      },
+      {
+        "id": "u3",
+        "name": "Amir Adel",
+        "gender": "male",
+        "age": 10
+      }
+    ],
+    "meetings": [
+       {
+        "id": "m1",
+        "title": "Youth Meeting - Discipleship",
+        "date": "2025-05-01",
+        "attended": true
+      },
+      {
+        "id": "m2",
+        "title": "Spiritual Retreat",
+        "date": "2025-04-15",
+        "attended": true
+      },
+      {
+        "id": "m3",
+        "title": "Spiritual Retreat",
+        "date": "2025-04-15",
+        "attended": false
+      },
+        {
+            "id": "m4",
+            "title": "Youth Meeting - Fellowship",
+            "date": "2025-05-05",
+            "attended": false
+        },
+        {
+            "id": "m5",
+            "title": "Youth Meeting - Outreach",
+            "date": "2025-05-08",
+            "attended": false
+        },
+        {
+            "id": "m6",
+            "title": "Youth Meeting - Prayer",
+            "date": "2025-05-12",
+            "attended": false
+        },
+        {
+            "id": "m7",
+            "title": "Youth Meeting - Bible Study",
+            "date": "2025-05-15",
+            "attended": true
+        },
+        {
+            "id": "m8",
+            "title": "Youth Meeting - Worship",
+            "date": "2025-05-18",
+            "attended": true
+        }
+
+    ]
+  }
+]
