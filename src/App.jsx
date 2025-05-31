@@ -13,6 +13,7 @@ import UserDetails from './pages/users/userDetails';
 import { LoaderWrapper } from './context/loader';
 import FixedBottomNavigation from './pages/messages/messages';
 import ServantsList from './pages/Servants/servsnts';
+import ServantDetails from './pages/Servants/servantDEtails';
 export default function App() {
   const { direction } = useLocalization();
   return (
@@ -29,6 +30,7 @@ export default function App() {
             <Route path="/servants" element={<ServantsList />} />
             <Route path="/users/create" element={<CreateUser />} />
             <Route path="/users/:id" element={<UserDetails />} />
+            <Route path="/servants/:id" element={<ServantDetails />} />
             <Route path="/products/create" element={<CreateProduct />} />
             <Route path="/messages" element={<FixedBottomNavigation />} />
           </Routes>

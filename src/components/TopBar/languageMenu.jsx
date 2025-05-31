@@ -10,7 +10,7 @@ export default function LanguageSelector() {
   const { language, changeLanguage } = useLocalization();
   const { t } = useTranslation();
   return (
-    <PopupState variant="popover" popupId="demo-popup-menu"  >
+    <PopupState variant="popover" popupId="demo-popup-menu"  style={{width:'40px'}} >
       {(popupState) => (
         <React.Fragment>
          <Button 
@@ -19,7 +19,7 @@ export default function LanguageSelector() {
             style={{
               display: "flex",
               alignItems: "start",
-              justifyContent:'flex-start',
+              justifyContent:'center',
                   backgroundColor: "transparent",
                   padding:'0px',
                 width:'30px',
