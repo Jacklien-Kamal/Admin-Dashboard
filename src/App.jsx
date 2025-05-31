@@ -1,7 +1,7 @@
 
 // App.jsx
 import { Routes, Route } from 'react-router-dom';
-import CreateUser from './pages/Users/CreateUser';
+import CreateUser from './pages/users/CreateUser';
 import CreateProduct from './pages/Servants/CreateProduct';
 import { useLocalization } from './localization/LocalizationContext';
 import UserList from './pages/users/users';
