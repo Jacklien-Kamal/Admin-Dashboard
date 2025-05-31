@@ -4,6 +4,7 @@ import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
+import CircularProgressSVG from "./circularProgress";
 
 export default function UserDetails() {
   const { id } = useParams();
@@ -130,6 +131,18 @@ export default function UserDetails() {
             </ul>
           </div>
         );
+      case 3:
+        return (
+          <div className="rounded-2xl shadow bg-white p-6">
+            <h3 className="text-lg font-semibold mb-4  dark:text-black">Meetings</h3>
+            <ul className="space-y-2  dark:text-black">
+              {currentUser.meetings.filter((meeting)=>(meeting.attended===true)).map((m)=>{
+                 return <li className="p-3 shadow my-4 rounded-md hover:bg-secondary-body cursor-pointer" key={m.id}>📅 {m.title} - {m.date}</li>;
+              })}
+            
+            </ul>
+          </div>
+        );
       default:
         return null;
     }
@@ -149,13 +162,31 @@ export default function UserDetails() {
             </Link>
             
             <div className="text-center p-6 rounded-2xl shadow bg-white">
-              <div className="w-24 h-24 mx-auto rounded-full overflow-hidden">
-                <img
-                  src={currentUser.profileImg}
-                  alt={currentUser.name}
-                  className="w-full h-full object-cover"
-                />
-              </div>
+             <div className="text-center p-6 rounded-2xl shadow bg-white">
+  <div className="relative w-28 h-28 mx-auto">
+    {/* Circular Progress */}
+    <CircularProgressSVG
+  value={
+    (currentUser.meetings.filter((m) => m.attended).length /
+      currentUser.meetings.length) *
+    100
+  }
+/>
+
+
+    {/* Profile Image */}
+    <div className="w-24 h-24 rounded-full overflow-hidden mx-auto absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+      <img
+        src={currentUser.profileImg}
+        alt={currentUser.name}
+        className="w-full h-full object-cover"
+      />
+    </div>
+  </div>
+
+  <h3 className="mt-4 text-lg font-semibold">{currentUser.name}</h3>
+</div>
+
               <h2 className="mt-4 text-xl font-semibold">{currentUser.name}</h2>
               <p className="text-gray-500">{currentUser.role}</p>
               <div className="mt-6 text-left">
@@ -168,6 +199,7 @@ export default function UserDetails() {
                     <Tab label="Details" />
                     <Tab label="Points" />
                     <Tab label="Exams" />
+                    <Tab label="Meetings" />
                   </Tabs>
                 </Box>
               </div>
