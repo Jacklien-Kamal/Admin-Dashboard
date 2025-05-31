@@ -9,6 +9,7 @@ import {
   MdInventory2,
   MdMenu,
   MdClose,
+  MdCalendarToday,
 } from "react-icons/md";
 
 import logo from "../../../public/logo.png";
@@ -30,6 +31,11 @@ export default function Sidebar() {
       path: "/servants",
       label: t("servants"),
       icon: <MdInventory2 size={20} />,
+    },
+    {
+      path: "/meetings",
+      label: t("meetings"),
+      icon: <MdCalendarToday size={20} />,
     },
   ];
 

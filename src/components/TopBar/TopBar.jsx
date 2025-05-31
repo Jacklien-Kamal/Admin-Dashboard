@@ -27,28 +27,28 @@ export default function TopBar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <div className="bg-primary-light dark:bg-primary-dark text-white px-4 shadow border border-gray-500  border-opacity-30 ">
-      <div className=" mx-auto px-4 py-3 flex justify-between items-center">
+    <div className="bg-white py-1 dark:bg-primary-dark text-gray-600 dark:text-white shadow border-b px-4 py-2 ">
+      <div className=" mx-auto px-4 py- flex justify-between items-center">
         {/* Logo */}
         <div className="flex items-center gap-2 text-xl font-bold">
           <span>{t("meeting")}</span>
-          {/* <FaChurch /> */}
+          {/* <FaChurch /> */}  
         </div>
 
         {/* Search */}
         <div className="relative hidden sm:block border border-gray-400 rounded-xl">
           <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none ">
-            <FaSearch className="text-gray-400" />
+            <FaSearch className="text-gray-400 " />
           </div>
           <input
             type="text"
             placeholder="Search..."
-            className="pl-10 pr-4 py-2 rounded-xl bg-white text-black w-44 focus:outline-none"
+            className="pl-10 pr-4 py-1 rounded-xl bg-white text-black w-44 focus:outline-none"
           />
         </div>
 
         {/* Desktop Icons */}
-        <div className="hidden text-xl md:flex items-center gap-6 text-white">
+        <div className="hidden text-xl md:flex items-center gap-6 ">
           
           <ThemeToggler/>
 
@@ -67,16 +67,13 @@ export default function TopBar() {
               17
             </span>
           </button>
-        <UserDropdown/>
 
         <FullScreenBtn/>
-
-          <button>
-            <LuSettings className="animate-spin" />
-          </button>
-
-          {/* Language Selector */}
           <LanguageSelector/>
+ 
+
+        <UserDropdown/>
+          {/* Language Selector */}
       
         </div>
 
