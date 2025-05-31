@@ -175,7 +175,7 @@ export default function UserDetails() {
 
 
     {/* Profile Image */}
-    <div className="w-24 h-24 rounded-full overflow-hidden mx-auto absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+    <div className="w-24 h-24 bg-secondary-body rounded-full overflow-hidden mx-auto absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
       <img
         src={currentUser.profileImg}
         alt={currentUser.name}
@@ -184,7 +184,6 @@ export default function UserDetails() {
     </div>
   </div>
 
-  <h3 className="mt-4 text-lg font-semibold">{currentUser.name}</h3>
 </div>
 
               <h2 className="mt-4 text-xl font-semibold">{currentUser.name}</h2>
