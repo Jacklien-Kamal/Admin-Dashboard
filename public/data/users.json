@@ -9,11 +9,31 @@
       "profileImg": "https://www.roumortodox.org/wp-content/uploads/2025/04/2504211.jpg",
       "password": "password123",
       "dateOfBirth": "1990-01-01",
-      "role": "servant",
+      "role": "user",
       "attendancePoints": 2,
       "attPoints": 1,
       "totalPoints": 3,
-      "status": "active"
+      "status": "active",
+      "meetings": [
+        {
+          "id": "m1",
+          "title": "God is here",
+          "date": "2025-05-01",
+          "attended": true
+        },
+        {
+          "id": "m2",
+          "title": "Spiritual Retreat",
+          "date": "2025-04-15",
+          "attended": true
+        },
+        {
+          "id": "m3",
+          "title": "Ava Antony",
+          "date": "2025-04-15",
+          "attended": true
+        }
+      ]
     },
     {
       "id": "2",
@@ -29,7 +49,27 @@
       "attendancePoints": 0,
       "attPoints": 0,
       "totalPoints": 0,
-      "status": "active"
+      "status": "inactive",
+      "meetings": [
+        {
+          "id": "m1",
+          "title": "God is here",
+          "date": "2025-05-01",
+          "attended": true
+        },
+        {
+          "id": "m2",
+          "title": "Spiritual Retreat",
+          "date": "2025-04-15",
+          "attended": true
+        },
+        {
+          "id": "m3",
+          "title": "Ava Antony",
+          "date": "2025-04-15",
+          "attended": false
+        }
+      ]
     },
     {
       "id": "3",
@@ -45,7 +85,27 @@
       "attendancePoints": 0,
       "attPoints": 0,
       "totalPoints": 0,
-      "status": "active"
+      "status": "active",
+        "meetings": [
+        {
+          "id": "m1",
+          "title": "God is here",
+          "date": "2025-05-01",
+          "attended": true
+        },
+        {
+          "id": "m2",
+          "title": "Spiritual Retreat",
+          "date": "2025-04-15",
+          "attended": true
+        },
+        {
+          "id": "m3",
+          "title": "Ava Antony",
+          "date": "2025-04-15",
+          "attended": false
+        }
+      ]
     },
     {
       "id": "4",
@@ -61,7 +121,27 @@
       "attendancePoints": 0,
       "attPoints": 0,
       "totalPoints": 0,
-      "status": "active"
+      "status": "active",
+      "meetings": [
+        {
+          "id": "m1",
+          "title": "God is here",
+          "date": "2025-05-01",
+          "attended": true
+        },
+        {
+          "id": "m2",
+          "title": "Spiritual Retreat",
+          "date": "2025-04-15",
+          "attended": true
+        },
+        {
+          "id": "m3",
+          "title": "Ava Antony",
+          "date": "2025-04-15",
+          "attended": false
+        }
+      ]
     },
     {
       "id": "5",
@@ -77,6 +157,26 @@
       "attendancePoints": 0,
       "attPoints": 0,
       "totalPoints": 0,
-      "status": "active"
+      "status": "active",
+      "meetings": [
+        {
+          "id": "m1",
+          "title": "God is here",
+          "date": "2025-05-01",
+          "attended": true
+        },
+        {
+          "id": "m2",
+          "title": "Spiritual Retreat",
+          "date": "2025-04-15",
+          "attended": true
+        },
+        {
+          "id": "m3",
+          "title": "Ava Antony",
+          "date": "2025-04-15",
+          "attended": true
+        }
+      ]
     }
   ]                     

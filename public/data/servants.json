@@ -6,7 +6,7 @@
     "email": "john@example.com",
     "gender": "male",
     "address": "123 Main St",
-    "profileImg": "https://www.roumortodox.org/wp-content/uploads/2025/04/2504211.jpg",
+    "profileImg": "https://images.unsplash.com/photo-1633332755192-727a05c4013d?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dXNlcnxlbnwwfHwwfHx8MA%3D%3D",
     "dateOfBirth": "1990-01-01",
     "role": "servant",
     "status": "active",
@@ -17,16 +17,35 @@
     "supervisor": "Fr. Michael",
     "users": [
       {
-        "id": "u1",
+        "id": "1",
         "name": "Mark Hanna",
         "gender": "male",
         "age": 17
       },
       {
-        "id": "u2",
+        "id": "2",
         "name": "Mary Gerges",
         "gender": "female",
         "age": 16
+      },
+      
+      {
+        "id": "3",
+        "name": "Samir Adel",
+        "gender": "male",
+        "age": 17
+      },
+      {
+        "id": "4",
+        "name": "Sara Adel",
+        "gender": "female",
+        "age": 16
+      },
+      {
+        "id": "5",
+        "name": "Lina Adel",
+        "gender": "female",
+        "age": 15
       }
     ],
     "meetings": [
@@ -88,7 +107,7 @@
     "email": "jane@example.com",
     "gender": "female",
     "address": "456 Elm St",
-    "profileImg": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSi7j_jdY9sY_IzhcPugwWjOtq7I2LHt-Jow&s",
+    "profileImg": "https://static.vecteezy.com/system/resources/thumbnails/048/174/549/small/portrait-of-a-young-man-with-a-serious-expression-free-photo.jpg",
     "dateOfBirth": "1995-05-15",
     "role": "servant",
     "status": "active",
@@ -96,7 +115,7 @@
     "serviceType": "Sunday School",
     "lastServed": "2025-05-19",
     "evaluationNotes": "Reliable and proactive.",
-    "supervisor": "Sr. Maria",
+    "supervisor": "fr. Matta",
     "users": [
       {
         "id": "u3",
@@ -174,5 +193,124 @@
         }
 
     ]
+  },
+  {
+    "id": "3",
+    "name": "Mariam Johnson",
+    "phoneNumber": "5551234567",
+    "email": "alice@example.com",
+    "gender": "female",
+    "address": "789 Oak St",
+    "profileImg": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTpEEvQGNwqJYEAr9hfaa_kr5-1VvrJZU60A&s",
+    "dateOfBirth": "1992-03-22",
+    "role": "servant",
+    "status": "active",
+    "group": "Women's Ministry",
+    "serviceType": "Bible Study",
+    "lastServed": "2025-05-20",
+    "evaluationNotes": "Great leadership skills.",
+    "supervisor": "fr. Matta",
+    "users": [
+      {
+        "id": "2",
+        "name": "Sara Johnson",
+        "gender": "female",
+        "age": 12
+      },
+      {
+        "id": "1",
+        "name": "Liam Johnson",
+        "gender": "male",
+        "age": 14
+      },
+      {
+        "id": "3",
+        "name": "Emma Johnson",
+        "gender": "female",
+        "age": 13
+      },
+      {
+        "id": "4",
+        "name": "Noah Johnson",
+        "gender": "male",
+        "age": 14
+      },
+      {
+        "id": "5",
+        "name": "Olivia Johnson",
+        "gender": "female",
+        "age": 15
+      },
+      {
+        "id": "6",
+        "name": "Ava Johnson",
+        "gender": "female",
+        "age": 12
+      },
+      {
+        "id": "7",
+        "name": "Sophia Johnson",
+        "gender": "female",
+        "age": 14
+      }   , 
+      {
+        "id": "8",
+        "name": "Isabella Johnson",
+        "gender": "female",
+        "age": 15
+      }
+    ],
+    "meetings": [
+      {
+        "id": "m1",
+        "title": "Youth Meeting - Discipleship",
+        "date": "2025-05-01",
+        "attended": true
+      },
+      {
+        "id": "m2",
+        "title": "Spiritual Retreat",
+        "date": "2025-04-15",
+        "attended": true
+      },
+      {
+        "id": "m3",
+        "title": "Spiritual Retreat",
+        "date": "2025-04-15",
+        "attended": false
+      },
+      {
+        "id": "m4",
+        "title": "Youth Meeting - Fellowship",
+        "date": "2025-05-05",
+        "attended": true
+      },
+      {
+        "id": "m5",
+        "title": "Youth Meeting - Outreach",
+        "date": "2025-05-08",
+        "attended": false
+      },
+      {
+        "id": "m6",
+        "title": "Youth Meeting - Prayer",
+        "date": "2025-05-12",
+        "attended": true
+      },
+      {
+        "id": "m7",
+        "title": "Youth Meeting - Bible Study",
+        "date": "2025-05-15",
+        "attended": true
+      },
+      {
+        "id": "m8",
+        "title": "Youth Meeting - Worship",
+        "date": "2025-05-18",
+        "attended": false
+      }
+
+    ]
   }
+
 ]
