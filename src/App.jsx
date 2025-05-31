@@ -5,7 +5,6 @@ import CreateUser from './pages/users/CreateUser';
 import CreateProduct from './pages/Servants/CreateProduct';
 import { useLocalization } from './localization/LocalizationContext';
 import UserList from './pages/users/users';
-import React from 'react';
 import Dashboard from './pages/dashboard';
 import Sidebar from './components/SideBar/Sidebar';
 import TopBar from './components/TopBar/TopBar';
