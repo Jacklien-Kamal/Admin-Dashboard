@@ -5,15 +5,15 @@ import "./index.css";
 import "./localization/i18n";
 import { LocalizationProvider } from "./localization/LocalizationContext";
 import { BrowserRouter } from "react-router-dom";
-import ThemeProvider from "./context/Theme";
-// import ThemeProvider from "./context/Theme.jsx";
+
+import ThemeWrapper from "./context/Theme";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
     <LocalizationProvider>
-      {/* <ThemeProvider> */}
+      <ThemeWrapper>
         <BrowserRouter>
             <App />
         </BrowserRouter>
-      {/* </ThemeProvider> */}
+      </ThemeWrapper>
     </LocalizationProvider>
 );
