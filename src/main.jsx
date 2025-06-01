@@ -8,7 +8,6 @@ import { BrowserRouter } from "react-router-dom";
 import { ThemeProvider } from "./Context/Theme";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <React.StrictMode>
     <LocalizationProvider>
       <ThemeProvider>
         <BrowserRouter>
@@ -16,5 +15,4 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         </BrowserRouter>
       </ThemeProvider>
     </LocalizationProvider>
-  </React.StrictMode>
 );
