@@ -1,7 +1,6 @@
 
 // App.jsx
 import { Routes, Route } from 'react-router-dom';
-import CreateUser from './pages/users/CreateUser';
 import CreateProduct from './pages/Servants/CreateProduct';
 import { useLocalization } from './localization/LocalizationContext';
 import UserList from './pages/users/users';
@@ -27,7 +26,7 @@ export default function App() {
             <Route path="/" element={<Dashboard />} />
             <Route path="/users" element={<UserList />} />
             <Route path="/servants" element={<ServantsList />} />
-            <Route path="/users/create" element={<CreateUser />} />
+            {/* <Route path="/users/create" element={<CreateUser />} /> */}
             <Route path="/users/:id" element={<UserDetails />} />
             <Route path="/servants/:id" element={<ServantDetails />} />
             <Route path="/products/create" element={<CreateProduct />} />
