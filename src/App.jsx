@@ -3,7 +3,6 @@
 import { Routes, Route } from 'react-router-dom';
 import Dashboard from './pages/dashboard';
 import UserList from './pages/Users/UsersList';
-import UserDetails from './pages/Meeting/MeetingDetails';
 import ServantDetails from './pages/Servants/servantDEtails';
 import CreateProduct from './pages/Servants/CreateServant';
 import FixedBottomNavigation from './pages/messages/messages';
