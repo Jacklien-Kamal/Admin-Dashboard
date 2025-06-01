@@ -3,11 +3,11 @@
 import { Routes, Route } from 'react-router-dom';
 import Dashboard from './pages/dashboard';
 import UserList from './pages/Users/UsersList';
-import CreateUser from './pages/Meeting/createMeeting';
 import UserDetails from './pages/Meeting/MeetingDetails';
 import ServantDetails from './pages/Servants/servantDEtails';
 import CreateProduct from './pages/Servants/CreateServant';
 import FixedBottomNavigation from './pages/messages/messages';
+import CreateUser from './pages/Users/CreateUser';
 
 export default function App() {
   const { direction } = useLocalization();
