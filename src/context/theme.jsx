@@ -1,8 +1,7 @@
-import React from 'react';
 import { createContext, useContext, useEffect, useState } from 'react';
 const ThemeContext = createContext();
 
-export const ThemeProvider = ({ children }) => {
+export function ThemeProvider ({ children }) {
   const [theme, setTheme] = useState(() => {
     // Try to load from localStorage
     return localStorage.getItem('theme') || 'light';
@@ -10,7 +9,6 @@ export const ThemeProvider = ({ children }) => {
 
   useEffect(() => {
     const root = window.document.documentElement;
-    const sidebar= document.getElementById('sidebar');
     if (theme === 'dark') {
       root.classList.add('dark');
  
