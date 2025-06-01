@@ -1,6 +1,6 @@
 import React from "react";
 import { LuMoon, LuSun } from "react-icons/lu";
-import { useTheme } from "../../context/theme";
+import { useTheme } from "../../context/Theme";
 
 export default function ThemeToggler() {
   const { theme, toggleTheme } = useTheme();
