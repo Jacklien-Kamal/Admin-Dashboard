@@ -1,7 +1,7 @@
 import { createContext, useContext, useEffect, useState } from 'react';
 const ThemeContext = createContext();
 
-export function ThemeProvider ({ children }) {
+export default function ThemeProvider ({ children }) {
   const [theme, setTheme] = useState(() => {
     // Try to load from localStorage
     return localStorage.getItem('theme') || 'light';

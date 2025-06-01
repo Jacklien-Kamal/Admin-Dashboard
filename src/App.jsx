@@ -12,7 +12,7 @@ import Sidebar from './components/SideBar/Sidebar';
 import TopBar from './components/TopBar/TopBar';
 import ServantList from './pages/Servants/ServantsList';
 import UserDetails from './pages/users/userDetails';
-import { LoaderWrapper } from './Context/LoaderWrapper';
+import { LoaderWrapper } from './context/LoaderWrapper';
 
 export default function App() {
   const { direction } = useLocalization();

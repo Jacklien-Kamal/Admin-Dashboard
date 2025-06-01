@@ -5,7 +5,7 @@ import { LineChart } from '@mui/x-charts/LineChart';
 import Stack from '@mui/material/Stack';
 import ToggleButton from '@mui/material/ToggleButton';
 import ToggleButtonGroup from '@mui/material/ToggleButtonGroup';
-import { useTheme } from '../../Context/Theme';
+import { useTheme } from '../../context/Theme';
 
 const otherProps = {
   width: 200,
