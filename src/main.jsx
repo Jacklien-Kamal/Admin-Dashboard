@@ -5,7 +5,7 @@ import "./index.css";
 import "./localization/i18n";
 import { LocalizationProvider } from "./localization/LocalizationContext";
 import { BrowserRouter } from "react-router-dom";
-import { ThemeProvider } from "./context/Theme";
+import { ThemeProvider } from "./Context/Theme";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>

@@ -10,9 +10,9 @@ import CreateUser from './pages/Users/CreateUser';
 import { useLocalization } from './localization/LocalizationContext';
 import Sidebar from './components/SideBar/Sidebar';
 import TopBar from './components/TopBar/TopBar';
-import { LoaderWrapper } from './context/LoaderWrapper';
 import ServantList from './pages/Servants/ServantsList';
 import UserDetails from './pages/users/userDetails';
+import { LoaderWrapper } from './Context/LoaderWrapper';
 
 export default function App() {
   const { direction } = useLocalization();

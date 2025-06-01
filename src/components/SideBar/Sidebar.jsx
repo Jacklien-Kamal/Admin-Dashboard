@@ -15,7 +15,7 @@ import {
 import logo from "../../../public/logo.png";
 import ReportsMenuSection from "./Report";
 import { FaChartBar } from "react-icons/fa";
-import { useTheme } from "../../context/Theme";
+import { useTheme } from "../../Context/Theme";
 
 export default function Sidebar() {
   const { theme } = useTheme();
