@@ -2,14 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 .darkBg{
-    background-image: url('/public/darkSidebarBg.png');
+    background-image: url('/darkSidebarBg.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-clip: border-box;
 
 }
 .lightBg{
-    background-image: url('/public/lightSidbarBg.png');
+    background-image: url('/lightSidbarBg.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-clip: border-box;

@@ -12,7 +12,6 @@ import {
   MdCalendarToday,
 } from "react-icons/md";
 
-import logo from "../../../public/logo.png";
 import ReportsMenuSection from "./Report";
 import { FaChartBar } from "react-icons/fa";
 import { useTheme } from "../../context/Theme";
