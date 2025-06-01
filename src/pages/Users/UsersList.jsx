@@ -6,7 +6,7 @@ import { LuCircleX } from "react-icons/lu";
 import { RiDeleteBin6Line } from "react-icons/ri";
 import { MdOutlineModeEdit } from "react-icons/md";
 
-const UserList = () => {
+export default function UserList() {
   const { t } = useTranslation();
   const [searchQuery, setSearchQuery] = useState("");
   const [sortKey, setSortKey] = useState("");
@@ -385,4 +385,3 @@ const UserList = () => {
   );
 };
 
-export default UserList;

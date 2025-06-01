@@ -1,17 +1,14 @@
 
 // App.jsx
 import { Routes, Route } from 'react-router-dom';
-import CreateProduct from './pages/Servants/CreateProduct';
-import { useLocalization } from './localization/LocalizationContext';
-import UserList from './pages/users/users';
 import Dashboard from './pages/dashboard';
-import Sidebar from './components/SideBar/Sidebar';
-import TopBar from './components/TopBar/TopBar';
-import UserDetails from './pages/users/userDetails';
-import { LoaderWrapper } from './context/loader';
-import FixedBottomNavigation from './pages/messages/messages';
-import ServantsList from './pages/Servants/servsnts';
+import UserList from './pages/Users/UsersList';
+import CreateUser from './pages/Meeting/createMeeting';
+import UserDetails from './pages/Meeting/MeetingDetails';
 import ServantDetails from './pages/Servants/servantDEtails';
+import CreateProduct from './pages/Servants/CreateServant';
+import FixedBottomNavigation from './pages/messages/messages';
+
 export default function App() {
   const { direction } = useLocalization();
   return (
