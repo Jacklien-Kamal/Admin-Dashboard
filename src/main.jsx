@@ -10,10 +10,10 @@ import ThemeProvider from "./context/Theme";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
     <LocalizationProvider>
-      <ThemeProvider>
+      {/* <ThemeProvider> */}
         <BrowserRouter>
             <App />
         </BrowserRouter>
-      </ThemeProvider>
+      {/* </ThemeProvider> */}
     </LocalizationProvider>
 );
